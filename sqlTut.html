@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Jonathan Painter Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Jonathan Painter Portfolio<br />
+						</h1>
+						<p>This is my fully responsive HTML5 website created & designed by me, <a href="https://www.linkedin.com/in/jonathan-painter-15430a223/">Jonathan Painter</a>, to <br />
+						showcase my personal Portfolio</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Portfolio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="in-active"><a href="index.html">Home</a></li>
+							<li><a href="excel.html">Excel</a></li>
+							<li><a href="sql.html">SQL</a></li>
+							<li><a href="tableau.html">Tableau</a></li>
+                            <li><a href="about.html">About</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href= "https://www.linkedin.com/in/jonathan-painter-15430a223/" class="icon brands fa-linkedin"><a class="active"></a></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+                        <h1>SQL Joins Project</h1>
+                        <p>
+                            I completed this Joins Intro from the guidance of a youtuber, Alex The Analyst, where he walked through joins from a dataset.
+                            
+
+                            <h2>Dataset</h2>
+                            <p>
+                                <img src="images/SqlTutDataset.png" alt="" weight="200" height="300" /> 
+                                <br>
+                                Here's the EmployeeDemographics table That I originally created in Excel and then saved it and imported it into SQL as a 
+                                data source. It gives each employye an EmployeeID and a column for FirstName, LastName, Gender, & Age.
+                                <img src="images/SqlTutSalary.png" alt="" weight="200" height="300" /> 
+                                <br>
+                                Here's the EmployeeSalary table that I also created in Ezxcel and then saved it and impoted it into SAL as a data source.
+                                It matches the Employee ID from the EmployeeDemographics table and JobTitle & Salary columns for the corresponding employee.
+                                <br>
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Code Snippets</h2>
+                            <p>
+                                <img src="images/SqlTuTCode1.png" alt="" weight="100" height="150"/> 
+                                <img src="images/SqlOutput.png" alt="" weight="200" height="300"/> 
+                                <br>
+                                Here's a screenshot from the first Join Statement we do as we join both tables above by a common attribute that are in both tables,
+                                EmployeeID. You can see the output we get as we find the number of male's and female's in the corresponding tables. This code creates
+                                a TotalGender column that adds to the original tables but doesn't really gives us what we need because the TotalGender is next to a corresponding
+                                employee, we need to just separate into 2 rows for male's and female's.  
+
+                                <br>
+                                <img src="images/SqlTut2.png" alt="" weight="150" height="200"/> 
+                                <img src="images/SqlOutput2.png" alt="" weight="200" height="300"/> 
+                                <br>
+                                Here's a screenshot for the next Join Statement we do as we're essentially doing the same thing but instead we're selecting just 2 columns,
+                                1 being the Gender and 2 being a made up column we're calling CountGender. We are also adding a GroupBy statement to group by Gender. We see
+                                from the output screenshot that now there are only 2 rows from the joined tables that now show the number of male's and female's counted in 
+                                the 2 tables.
+                            </p>
+                            <br>
+                            <br>
+
+                        </p>
+					
+
+						<!-- Posts -->
+						
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>405 Highroad Drive apt. 204<br />
+								Charlotte, NC 28262</p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">jpaint15@uncc.edu</a></p>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Portfolio</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
