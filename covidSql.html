@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Jonathan Painter Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Jonathan Painter Portfolio<br />
+						</h1>
+						<p>This is my fully responsive HTML5 website created & designed by me, <a href="https://www.linkedin.com/in/jonathan-painter-15430a223/">Jonathan Painter</a>, to <br />
+						showcase my personal Portfolio</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Portfolio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="excel.html">Excel</a></li>
+							<li><a href="sql.html">SQL</a></li>
+							<li><a href="tableau.html">Tableau</a></li>
+                            <li><a href="about.html">About</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href= "https://www.linkedin.com/in/jonathan-painter-15430a223/" class="icon brands fa-linkedin"><a class="active"></a></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+                        <h1>Tabelau Project</h1>
+                        <p>
+                            In this project and in the <a href="https://github.com/Jpaint15/PortfolioProjects/blob/main/PortfolioSql.sql">Tableau Covid</a> we are going
+                            to be looking at Datasets provided by the official statistics on covid and using it to go into sql and crate queries/tables. Since there's a lot
+                            of different queiries im only going to show a few screen grabs
+
+                            <h2>Dataset</h2>
+                            <p>
+                                <img src="images/datasetcovid.png" alt="" weight="1000" height="600" /> 
+                                <br>
+                                This is just a small screengrab from the dataset in excel. The complete dataset is over 35 columns and 5000 rows but as I stated in the 
+                                Introduction since im using a lower level free software it won't allow for data exploration like say a Microsoft SQL Server. In this small
+                                screen grab we can see certain columns used for filtering in our query such as Location, Total Cases, New Cases, the Date, etc...
+                                <br>
+                                
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Code</h2>
+                            <p>
+                                <img src="images/Infectioncount.png" alt="" weight="1000" height="600" /> 
+                                <br>
+                                Right here where getting Location, Population, HighestInfectionCount, & ContractPercent by dividing the total cases by population and 
+                                multiplying by 100 to get it as a percentage. We wanted to get the countries in the location column, the total population of the country, 
+                                and the highest number of confirmed infections, we can then get the infection percentage for each country that the software will allow.
+                                We then want to order by Contract Percentage and organize them in descending order.
+                                <br>
+                                <img src="images/infectperc.png" alt="" weight="1000" height="600" /> 
+                                <br>
+                                This is the outcome of the above code. We are filtering between countries, population, infection count, and contract percentage. From here
+                                we see Bosnia and Herzegovina has the highest contract percentage at 6.03% with an infection count of 197,866 out of their total population
+                                3,280,815 people. Colombia is second in contract percentage with over 47 million more people in their population. So if we look closely at our
+                                data we can derive that Colombia was the most hard country as a whole but based on the selected data we got from the set but on a per person basis Bosnia and Herzegovina
+                                was hurt the most.
+                                <br>
+                                <img src="images/totalinfected.png" alt="" weight="1000" height="600" /> 
+                                <br>
+                                In this code we're grabbing the total cases, the total deaths, and the death percentage. We are getting the death percentage by dividing the total cases by the 
+                                total deaths and multiplying by a 100. We are deciding to filter by continent instead of location because later in the queries we want to filter and not show
+                                too many rows where its difficult to read or understand. We then want to order by columns 1 and 2, being total_cases and total_deaths respectively, to order the table how
+                                we would like.
+                                <br>
+                                <img src="images/totaltallie.png" alt="" weight="1000" height="600" /> 
+                                <br>
+                                Here we can see the output of the code above, we see the total number of confirmed cases from the selection of the dataset is 36,650,682 people. Again with the software
+                                we are currently using there's a large portion of data that isn't being accounted for but still this is showing the correct process to go in on the data and get our findings.
+                                The total deaths comes out to 793,836 and that with a death percentage of 2.17%.
+                                <br>
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Github Code Link</h2>
+                            <p>
+                                You can find the full code on Github: <a href="https://github.com/Jpaint15/PortfolioProjects/blob/main/PortfolioSql.sql">Covid Sql</a>
+
+                            </p>
+
+                        </p>
+					
+
+						<!-- Posts -->
+						
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>405 Highroad Drive apt. 204<br />
+								Charlotte, NC 28262</p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">jpaint15@uncc.edu</a></p>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Portfolio</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
