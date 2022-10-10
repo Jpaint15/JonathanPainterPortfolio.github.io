@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Jonathan Painter Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Jonathan Painter Portfolio<br />
+						</h1>
+						<p>This is my fully responsive HTML5 website created & designed by me, <a href="https://www.linkedin.com/in/jonathan-painter-15430a223/">Jonathan Painter</a>, to <br />
+						showcase my personal Portfolio</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Portfolio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="excel.html">Excel</a></li>
+							<li><a href="sql.html">SQL</a></li>
+							<li><a href="tableau.html">Tableau</a></li>
+                            <li><a href="about.html">About</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href= "https://www.linkedin.com/in/jonathan-painter-15430a223/" class="icon brands fa-linkedin"><a class="active"></a></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+                        <h1>IMBD Project-Tableau</h1>
+                        <p>
+                            In this project we're continuing the project we started first in SQL where we used 2 different datasets for our query to develop
+                            tables and undercover some of the key points in our data. There are 4 different datasets we are using in this one, this is also a
+                            selected portion of the real data from around the world because we're using the same data we inserted into SQL in the previous part of
+                            the project.
+
+                            <h2>Dataset</h2>
+                            <p>
+                                <img src="images/ImbdDataset.png" alt="" width="1400" height="600" /> 
+                                <br>
+                                In this small screen grab from out data source we see theres columns for the series title, Genre, Runtime, IMBD rating, etc.
+                                There's a bunch of different columns that we can use in Tableau to sort through and find trends that we can then visualize 
+                                into a dashboard.
+                                <br>
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Visualizations</h2>
+                            <p>
+                                <img src="images/vizimbd1.png" alt="" width="1400" height="900"/> 
+                                <br>
+                                In our first visualization we're measuring genre by the gross amount of money made in that particular genre. As we see the genre that 
+                                made to most amount of money by far is 'Action' with about 21 million made and the next highest made being 'Adventure'. This is a descending bar 
+                                graph that shows the range of money made in each genre of film and let's us know how the money is being distributed.
+
+                                <br>
+                                <img src="images/imbdviz2.png" alt="" weight="800" height="900"/> 
+                                <br>
+                                In our second visualization we just want to display the highest rated IMBD movies so we can have some variety to our dashboard and this 
+                                is the only way we can incorporate all the films in the dataset that people can scroll through to see. We excluded one piece of data that 
+                                exceeded the 1 to 10 scale IMBD uses to rate all their movies. The highest rated movie is 'The Shawshank Redemption' at 9.3 followed by a lot
+                                of others close behind.
+
+                                <br>
+                                <img src="images/imbdviz3.png" alt="" weight="800" height="900"/> 
+                                <br>
+                                In our third visualization we want to see if theres any correlation between the year the film was released and the average amount of money made that
+                                year across all film genres. We see the biggest spikes came in at 1977 and 2018. There's a big drop near the end that had to deal with covid and movies 
+                                not being watched at theatres across the world. 
+
+                                <br>
+                                <img src="images/imbdviz4.png" alt="" weight="800" height="900"/> 
+                                <br>
+                                In our fourth and final visualization we're creating a pie graph of the metascores across all genres. This pie graph is a little misleading because it shows 
+                                film-noir as the highest average meta score genre but there were only a couple instances of that particular genre. Exlcuding that genre Animation and Thriller 
+                                were the 2 highest average meta-scored genres of the dataset.
+
+                                <br>
+                            </p>
+                            <br>
+                            <br>
+
+                            <h2>Tableau Public Link</h2>
+                            <p>
+                                You can see the full dashboard of the project Here: <a href="https://public.tableau.com/app/profile/jonathan.painter/viz/IMBDMovies_16650801739600/Dashboard1?publish=yes">IMBD Dashboard</a>
+                             </p>
+
+                        </p>
+					
+
+						<!-- Posts -->
+						
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>405 Highroad Drive apt. 204<br />
+								Charlotte, NC 28262</p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">jpaint15@uncc.edu</a></p>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Portfolio</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
